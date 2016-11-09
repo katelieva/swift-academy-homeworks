@@ -12,16 +12,21 @@ nav a {
     display: inline-block;
 }
 
-about me {
+nav {
     padding: 10px;
     border-style: solid;
-    background-color: yellow;
+    align-items: center;
+    justify-content: center;
+}
+
+#about {
+    background-color: orange;
 }
 
 button {
     border: solid;
     border-bottom-style: double;
-    padding: 10px 12px;
+    padding: 1px px;
     color: blueviolet brown;
     text-align: center;
     font-size: 19px;
