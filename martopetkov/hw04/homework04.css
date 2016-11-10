@@ -164,6 +164,7 @@ figure.desc {
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     background-color: dodgerblue;
+    border-radius: 20px;
     text-align: center;
     padding: 10px;
     color: white;
