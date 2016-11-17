@@ -13,7 +13,7 @@ var artists = [
 
             // Task 4
 
-function allAlive(artists) {
+var task4 = function allAlive(artists) {
 
     var searchPerson = artists.filter(function stillAlive(artist) {
 
@@ -23,5 +23,9 @@ function allAlive(artists) {
             console.log(artist.name);
         }
     });
-}
-allAlive(artists);
+};
+console.log(allAlive);
+// allAlive(artists);
+
+var htmlIn = document.getElementById('Task_4');
+htmlIn.innerHTML = allAlive(artists);

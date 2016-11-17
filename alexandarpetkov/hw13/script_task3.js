@@ -29,11 +29,11 @@ var artists = [
 // stillAlive(artists[0]); // => false
 // stillAlive(artists[1]); // => true
 //
-// var task3 = document.getElementById('Task_3');
-// var task31 = document.getElementById('Task_3.1');
+var task3 = document.getElementById('Task_3');
+var task31 = document.getElementById('Task_3.1');
 //
-// task3.innerHTML = stillAlive(artists[0]);
-// task31.innerHTML = stillAlive(artists[1]);
+task3.innerHTML = stillAlive(artists[0]);
+task31.innerHTML = stillAlive(artists[1]);
 
 // TASK 3 (method 2) - Homework #13
 
