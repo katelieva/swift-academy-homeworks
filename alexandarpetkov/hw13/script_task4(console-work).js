@@ -13,19 +13,23 @@ var artists = [
 
             // Task 4
 
-var task4 = function allAlive(artists) {
+function allAlive(artists) {
 
     var searchPerson = artists.filter(function stillAlive(artist) {
 
         var diedNaw = artist.died;
-        
+
         if ( diedNaw == undefined){
             console.log(artist.name);
         }
     });
-};
-console.log(allAlive);
-// allAlive(artists);
+    return artists.filter(stillAlive);
 
-var htmlIn = document.getElementById('Task_4');
-htmlIn.innerHTML = allAlive(artists);
+};
+
+    // var htmlIn = document.getElementById('Task_4');
+    // htmlIn.innerHTML = artists.filter(stillAlive(artist);
+
+allAlive(artists);
+
+
