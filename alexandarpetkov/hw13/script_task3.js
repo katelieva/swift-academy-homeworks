@@ -11,27 +11,40 @@ var artists = [
 
 
             // TASK 3 - Homework #13
+//
+// function stillAlive(artist) {
+//     var result;
+//     var diedNaw = artist.died;
+//
+//     if ( diedNaw == undefined){
+//         result = artist.name + ' is alive - true';
+//     } else {
+//         result = artist.name + ' is alive - false';
+//     }
+//
+//     return result;
+//     // returns true if the given artist is still alive and false otherwise
+// }
+//
+// stillAlive(artists[0]); // => false
+// stillAlive(artists[1]); // => true
+//
+// var task3 = document.getElementById('Task_3');
+// var task31 = document.getElementById('Task_3.1');
+//
+// task3.innerHTML = stillAlive(artists[0]);
+// task31.innerHTML = stillAlive(artists[1]);
+
+// TASK 3 (method 2) - Homework #13
 
 function stillAlive(artist) {
-    var result;
-    var diedNaw = artist.died;
+   var diedNaw = artist.died;
+   var alive = false;
 
-    if ( diedNaw == undefined){
-        result = artist.name + ' is alive - true';
-    } else {
-        result = artist.name + ' is alive - false';
-    }
-
-    return result;
-    // returns true if the given artist is still alive and false otherwise
+   if ( diedNaw == undefined){
+       alive = true;
+   }
+   return alive;
 }
-
-stillAlive(artists[0]); // => false
-stillAlive(artists[1]); // => true
-
-var task3 = document.getElementById('Task_3');
-var task31 = document.getElementById('Task_3.1');
-
-task3.innerHTML = stillAlive(artists[0]);
-task31.innerHTML = stillAlive(artists[1]);
-
+console.log(stillAlive(artists[0]));
+console.log(stillAlive(artists[1]));
