@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Lesson 11 - Bootstrap</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  <style>
+    .container {
+      border: 1px solid;
+    }
+
+    #my-addon {
+      background-color: transparent;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="jumbotron">
+        <div class="page-header">
+          <h1>Boostrap is here!</h1>
+        </div>
+      </div>
+    </header>
+
+    <main>
+
+      <div class="row">
+
+        <div class="col-md-4 col-sm-6">
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h3>My first panel</h3>
+            </div>
+            <div class="panel-body">
+              <ul>
+                <li>Everythind has new style</li>
+                <li>.. and looks nice</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="panel panel-success">
+            <div class="panel-heading">
+              <h3>Yey!</h3>
+            </div>
+            <div class="panel-body">
+              <ul>
+                <li>Everythind has new style</li>
+                <li>.. and looks nice</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="panel panel-danger">
+            <div class="panel-heading">
+              <h3>Uh-oh</h3>
+            </div>
+            <div class="panel-body">
+              <ul>
+                <li>Everythind has new style</li>
+                <li>.. and looks nice</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+        Toggle demo modal
+      </button>
+
+      <hr>
+
+      <div class="btn-group">
+        <button class="btn btn-primary">Submit</button>
+        <button class="btn btn-default">Cancel</button>
+      </div>
+
+      <hr>
+        <div class="input-group">
+          <span id="my-addon" class="input-group-addon"><span class="glyphicon glyphicon-envelope text-info"></span></span>
+          <input type="email" placeholder="you@example.com" class="form-control">
+        </div>
+      <hr>
+
+      <div>
+        <input type="button" class="btn btn-success btn-lg" value="Submit">
+        <a href="#" class="btn btn-lg btn-warning" onclick="confirm('Are you sure?')">
+          <span class="glyphicon glyphicon-piggy-bank"></span>
+          Be careful!
+        </a>
+        <a href="" class="">and this is just a link!</a>
+      </div>
+
+      <hr>
+
+      <button class="btn btn-info btn-lg" onmouseover="var counter=document.getElementById('counter'); counter.innerHTML = (counter.innerHTML*1)+1">
+        I was moseovered <span id="counter">0</span> times
+      </button>
+
+      <hr>
+
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">My modal</h4>
+            </div>
+            <div class="modal-body">
+              A custom modal content
+              <ul>
+                <li>first</li>
+                <li>second</li>
+              </ul>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+          integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+          crossorigin="anonymous"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
