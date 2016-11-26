@@ -27,8 +27,8 @@ function allAlive(artists) {
 
 };
 
-    // var htmlIn = document.getElementById('Task_4');
-    // htmlIn.innerHTML = artists.filter(stillAlive(artist);
+    var htmlIn = document.getElementById('Task_4');
+    htmlIn.innerHTML = artists.filter(stillAlive(artist));
 
 allAlive(artists);
 
