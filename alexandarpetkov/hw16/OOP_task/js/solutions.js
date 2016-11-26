@@ -17,11 +17,23 @@ function Person(firstName, lastName, bePolite) {
         }
     };
 
-    this.introduce = function () {
-        if (this.isPolite === true) {
-            return ('Казвам се ' + this.firstName + ' ' + this.lastName + '.');
+    this.introduce = function (otherPerson) {
+        if (otherPerson !== undefined) {
+            if (this.isPolite === true) {
+                return ('Здравейте ' + otherPerson.firstName + ' ' + otherPerson.lastName + '!' + ' ' +
+                'Казвам се ' + this.firstName + ' ' + this.lastName + '.');
+            } else {
+                return ('Здрасти, ' + otherPerson.firstName + '!' + ' ' +
+                'Аз съм ' + this.firstName + '.');
+            }
         } else {
-            return ('Аз съм ' + this.firstName + '.');
+            if (this.isPolite === true) {
+                return ('Здравейте! ' +
+                'Казвам се ' + this.firstName + ' ' + this.lastName + '.');
+            } else {
+                return ('Здрасти! ' +
+                'Аз съм ' + this.firstName + '.');
+            }
         }
     };
 
@@ -43,9 +55,10 @@ var lady1 = new Person('Zlatina', 'Iovkova');
 // console.log(lady1.greet(man1));
 // console.log(lady1.introduce());
 
-console.log(man1.bePolite(true));
-console.log(man1.greet(lady1));
-console.log(man1.introduce());
+console.log(lady1.bePolite(false));
+console.log(man1.introduce(lady1));
+console.log(lady1.introduce(man1));
+console.log(lady1.introduce());
 
 
 // function Person(name, surname) {
@@ -66,3 +79,8 @@ function personGreeting (Person, beFormal) {
 var Sasho = new Person('Sasho', 'Petkov');
 // console.log(personGreeting(Sasho));
 
+
+
+
+// 'Здравейте ' + otherPerson.firstName + ' ' + otherPerson.lastName + '!' +
+// 'Здрасти, ' + otherPerson.firstName + '!' +
