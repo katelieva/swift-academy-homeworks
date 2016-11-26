@@ -13,16 +13,11 @@ function findByAge(list, age) {
 // returns the name of the artist that has the given age
     var result=0;
     var currentYear=new Date().getFullYear();
-    result=artists.find(function (artists) {
+     result=artists.find(function (artists) {
         var artistAge=currentYear-artists.born;
-        return artistAge===age;
-    });
+         return artistAge===age;
+     });
     return result? result.name : -1;
 }
 console.log(findByAge(artists,52));
 console.log(findByAge(artists,32));
-
-var findNameByAge=document.getElementById('artist-age');
-var notMatch=document.getElementById('noMatches');
-findNameByAge.innerHTML=findByAge(artists,52);//ако може да се обясни грешката
-notMatch.innerHTML=findByAge(artists,32);

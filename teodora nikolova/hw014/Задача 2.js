@@ -57,7 +57,7 @@ function quantity(shoppingCart) {
 function veganQuantity(shoppingCart) {
     var veganItems=0;
     for(var i=0;i<shoppingCart.length;i++){
-        if(shoppingCart[i].type=="fruit" || shoppingCart[i].type=="vegetable"){
+        if(shoppingCart[i].type==="fruit" || shoppingCart[i].type=="vegetable"){
             var quantityItems=shoppingCart[i].quantity;
             veganItems+=quantityItems;
         }
