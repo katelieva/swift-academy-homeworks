@@ -20,7 +20,7 @@ function Person(firstName, lastName, bePolite) {
     this.introduce = function (otherPerson) {
         if (otherPerson !== undefined) {
             if (this.isPolite === true) {
-                return ('Здравейте ' + otherPerson.firstName + ' ' + otherPerson.lastName + '!' + ' ' +
+                return ('Здравейте, ' + otherPerson.firstName + ' ' + otherPerson.lastName + '!' + ' ' +
                 'Казвам се ' + this.firstName + ' ' + this.lastName + '.');
             } else {
                 return ('Здрасти, ' + otherPerson.firstName + '!' + ' ' +
@@ -39,7 +39,7 @@ function Person(firstName, lastName, bePolite) {
 
     this.greet = function (otherPerson) {
         if (this.isPolite === true) {
-            return ('Здравейте ' + otherPerson.firstName + ' ' + otherPerson.lastName + '!');
+            return ('Здравейте, ' + otherPerson.firstName + ' ' + otherPerson.lastName + '!');
         } else {
             return ('Здрасти, ' + otherPerson.firstName + '!');
         }
