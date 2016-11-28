@@ -45,3 +45,5 @@ function Person(firstName,lastName) {
 }
 var newPersonIntro=new Person("Tedy","Nikolova");
 console.log(newPersonIntro.introduce());
+
+//ОПП учи се

@@ -80,7 +80,7 @@ console.log('overall', quantity(shoppingCart)); // should return 26
 console.log('vegan', veganQuantity(shoppingCart)); // should return 17
 function allItems() {
 
-
+//jquery учи се
     document.getElementsByClassName("AllItems").setAttribute("value", "" + quantity(shoppingCart));
 
 
