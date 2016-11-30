@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+
+    <script>
+        "use strict"
+        setInterval(function () {
+            var x = document.createElement("P");
+            var t = document.createTextNode("Do you know how to stop me?.");
+            x.appendChild(t);
+            document.body.appendChild(x);
+            myVar = setInterval(alertFunc, 50000);
+        });
+        clearInterval(refreshIntervalId);
+    </script>
+
+</body>
+
+</html>
