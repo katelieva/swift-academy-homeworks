@@ -42,11 +42,11 @@ var shoppingCart = [
     }
 ];
 
-function quantity(shoppingCart) {
+function quantity(itemsList) {
 
     var allQuantity=0;
 
-    shoppingCart.forEach(function(items){
+    itemsList.forEach(function(items){
         var quantityItems=items.quantity;
         allQuantity+=quantityItems;
     });
@@ -55,14 +55,14 @@ function quantity(shoppingCart) {
 
 
 function veganQuantity(shoppingCart) {
-    var veganItems=0;
-//тука трябва да се помисли още за този филтър
-    // shoppingCart.filter(function(products){
-    //     return products==shoppingCart.type=="fruit";
-    //     veganItems+=products[0].quantity;
-    // })
-    //
-    // return veganItems;
+    var result=0;
+
+     var filtrered=shoppingCart.filter(function (item){
+        return(item.type==="fruit"||item.type==="vegetable");
+
+    });
+    result=quantity(filtrered);
+    return result;
 
 }
 

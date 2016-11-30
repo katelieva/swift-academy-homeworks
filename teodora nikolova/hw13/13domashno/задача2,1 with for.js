@@ -1,4 +1,3 @@
-"use strict";
 var artists = [
     { name: 'David Bowie', born: 1947, died: 2016 },
     { name: 'Thom Yorke', born: 1968 },
@@ -9,26 +8,27 @@ var artists = [
 ];
 
 
-function findByAge(list,age) {
 
-    var newDate=new Date();
-    var curentDate=newDate.getFullYear();
-    var result;
+function findByAge(list, age) {
+    // returns the name of the artist that has the given age
+    var currentDate=new Date().getFullYear();
+    var result=0;
     for(var i=0;i<list.length;i++){
-        var calcYearsofArtist=curentDate-list[i].born;
+        var haveperson=currentDate-list[i].born;
 
+        if(haveperson===age){
+            console.log(list[i].name);break;
 
-        if(calcYearsofArtist===age){
-            result=list[i].name;
-            break;
         }
 
         else{
-            result=-1;
+            result=(-1);
         }
+
 
     }
     return result;
+
 }
 
 console.log(findByAge(artists, 52)); // => "Tracy Chapman"
