@@ -1,0 +1,145 @@
+/************** CONTACT *************/
+
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.contact {
+    padding: 0 !important;
+    overflow-y: auto !important;
+    background: url(/assets/images/faq/img_flower.jpg) no-repeat;
+    background-position: 100% 0%;
+    background-size: 22%;
+    /* background-color: #644b78;*/
+}
+
+.contact_text_content {
+    /* background-color: #e2f4f6;*/
+    color: #333;
+    height: 400px;
+    width: 100%;
+    text-align: left;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+
+#contact_container {
+    zoom: 1.2;
+}
+
+.contact .error-message {
+    display: block;
+    color: "#4d001f;
+ font-weight: bold;
+    visibility: hidden;
+    margin-bottom: 3px;
+}
+
+#left-bkg {
+    width: 100%;
+    height: 100%;
+    background: url(/assets/images/faq/img_diamond.jpg) no-repeat;
+    background-position: left 60%;
+    background-size: 18%;
+    /* padding: 100px 64px !important;*/
+}
+
+*/ #contact_us {
+    float: left;
+    width: 50%;
+}
+
+#contact_us input {
+    margin: 4px 0 0;
+    border: 1px solid #87d2e7;
+    height: 22px;
+}
+
+#contact_us #phone {
+    margin-bottom: 0px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#contact_us #subject {
+    width: 270px;
+}
+
+#contact_us #submit {
+    background-color: #d60053;
+    border: 4px solid #fff;
+    border-radius: 20px;
+    color: #fff;
+    margin-left: 10px;
+    /* margin-top: 20px; */
+    /* line-height: 28px; */
+    padding: 3px 16px;
+    height: 27px;
+    float: left;
+    margin-right: 3%;
+    cursor: pointer;
+}
+
+#contact_us textarea {
+    border: 1px solid #87d2e7;
+    margin-top: 4px;
+    float: left;
+}
+
+#contact_right_img {
+    float: right;
+    width: 50%;
+    height: 324px;
+    top: 0;
+    background: url(/assets/images/faq/img_girls.png) no-repeat;
+    background-position: right top;
+    background-size: contain;
+}
+
+#no-valid {
+    display: none;
+    width: 40%;
+    float: right;
+}
+
+.qtip-content {
+    display: none;
+    color: #333 !important;
+    font-weight: normal !important;
+    font-size: 14px !important;
+    line-height: 1.2em !important;
+    border-color: #f5416c !important!;
+}
+
+#valid {
+    display: none;
+}
+
+#successText {
+    float: left;
+    width: 50%;
+    font-size: 18px;
+}
+
+#successText h3 {
+    /*color: #644b7e;*/
+    font-size: 24px;
+    margin-bottom: 0;
+}
+
+#successText a {
+    color: #00add9;
+    text-decoration: underline;
+}
+
+.text_title {
+    font-size: 30px;
+}
